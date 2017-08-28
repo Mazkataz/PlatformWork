@@ -6,7 +6,7 @@ class Number_Program extends Thread{
 	int start; 
 	int end; 
 	String numberType; 
-	volatile static ArrayList<Integer> numberList;
+	 static ArrayList<Integer> numberList;
 	
 	Number_Program(int star, int en, String numberTyp){
 	this.start = star;

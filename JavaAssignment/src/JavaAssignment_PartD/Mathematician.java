@@ -11,7 +11,7 @@ public abstract class Mathematician {
 	protected int result;
 	protected int responseTime;
 	
-	Date timeRequested; 
+	long timeRequested; 
 
 	public abstract int add(int x, int y);
 	public abstract int multiply(int x, int y);

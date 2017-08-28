@@ -2,38 +2,36 @@ package JavaAssignment_PartD;
 
 import java.util.Calendar;
 
-public class Adder extends Mathematician {
+public class Subtractor extends Mathematician {
 
-	Adder(int num_1, int num_2) {
+	Subtractor(int num_1, int num_2) {
 		this.num1 = num_1;
 		this.num2 = num_2;
 
 		 timeRequested = Calendar.getInstance().get(Calendar.MILLISECOND);
 	}
 
-	Adder(int num_1, int num_2, int num_3) {
+	Subtractor(int num_1, int num_2, int num_3) {
 		this.num1 = num_1;
 		this.num2 = num_2;
 		this.num3 = num_3;
-		 timeRequested = Calendar.getInstance().get(Calendar.MILLISECOND);
+		 this.responseTime = (int) (timeRequested - Calendar.getInstance().get(Calendar.MILLISECOND));
 	}
 
 	@Override
 	public int add(int x, int y) {
 
-		this.result = this.num1 + this.num2; 
+		this.result = this.num1 - this.num2; 
 		
-		 this.responseTime = (int) (timeRequested - Calendar.getInstance().get(Calendar.MILLISECOND));
-
+		
 		return 0;
 	}
 	
 	public int add() {
 
-		this.result = this.num1 + this.num2+this.num3; 
+		this.result = this.num1 - this.num2 - this.num3; 
 		
-		 this.responseTime = (int) (timeRequested - Calendar.getInstance().get(Calendar.MILLISECOND));
-
+		
 		return 0;
 	}
 
