@@ -1,5 +1,7 @@
 package JavaAssignment_PartD;
 
+import java.util.Calendar;
+
 public class Multiplier extends Mathematician {
 
 	public Multiplier() {
@@ -15,7 +17,8 @@ public class Multiplier extends Mathematician {
 		this.result = this.num1 * this.num2; 
 		
 		
-		
+		 this.responseTime = (int) (timeRequested - Calendar.getInstance().get(Calendar.MILLISECOND));
+
 		
 		return 0;
 	}
